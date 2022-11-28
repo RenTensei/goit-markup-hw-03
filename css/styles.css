@@ -1,0 +1,162 @@
+:root {
+    --iris: #4D5AE5;
+    --navy-blue: #2E2F42;
+    --slate: #434455;
+    --cornflower: #E7E9FC;
+    --cloud: #F4F4FD;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--navy-blue);
+}
+ 
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11em;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+a, button {
+    font-family: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+}
+
+button {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    padding: 0px;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+}
+
+.logo-first-part {
+    color: var(--iris);
+}
+
+.nav-menu {
+    font-weight: 500;
+}
+
+.nav-studio:hover, .nav-studio:focus,
+.nav-portfolio:hover, .nav-portfolio:focus,
+.nav-contacts:hover, .nav-contacts:focus {
+    color: var(--slate);
+}
+
+.nav-studio:active, .nav-portfolio:active, .nav-contacts:active {
+    color: var(--iris);
+}
+
+.contacts {
+    color: var(--slate);
+}
+
+.email:hover, .email:focus,
+.number:hover, .number:focus {
+    color: var(--iris);
+}
+
+.solutions {
+    font-size: 56px;    
+    font-weight: 500;    
+    line-height: 1.07em;
+    text-align: center;
+    color: var(--white);    
+}
+
+.solutions-button {
+    line-height: 1.17em;
+    color: var(--white);
+    background: var(--iris);
+    border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.solutions-button:hover, .solutions-button:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.solutions-button:active {
+    background: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.lower-header {
+    background-color: var(--navy-blue);
+}
+
+.team-members {
+    background-color: var(--cloud);
+}
+
+.card {
+    text-align: center;
+    background-color: var(--white);
+}
+
+footer {
+    background-color: var(--navy-blue);
+}
+
+.footer-text {
+    color: var(--cornflower);
+}
+
+.footer-logo-second-part {
+    color: var(--cloud);
+}
+
+/* portfolio */
+
+.portfolio-button-button {
+    color: var(--iris);
+    background-color: var(--cloud);
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+}
+
+.portfolio-button-button:hover, .portfolio-button-button:focus {
+    color: var(--white);
+    background: var(--iris);
+    border: 1px solid var(--iris);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+li.project-card {
+    background-color: var(--white);
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+#project-cashless-payment {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
