@@ -12,25 +12,119 @@ body {
     letter-spacing: 0.02em;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
     color: var(--navy-blue);
 }
  
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-h2 {
+h1, h2, h3, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+.container {
+
+    width: 1158px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-menu {
+    display: flex;
+
+    font-weight: 500;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo {
+    display: flex;
+    margin-right: 77px;
+
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+}
+.logo-first-part, .logo-second-part {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logo-first-part {
+    color: var(--iris);
+}
+
+.logo-second-part {
+    color: var(--navy-blue);
+}
+
+.contacts {
+    display: flex;
+    gap: 40px;
+    color: var(--slate);
+}
+
+.nav-list-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.products-header {
+    margin-bottom: 72px;
+
     font-weight: 500;
     font-size: 36px;
-    line-height: 1.11em;
+    line-height: 1.11;
     text-align: center;
 }
 
-h3 {
+.products-images {
+    display: flex;
+    gap: 24px;
+}
+
+.team-members-header {
+    margin-bottom: 72px;
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.feature-header {
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2em;
+    line-height: 1.2;
+}
+.employee-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 a, button {
@@ -46,24 +140,6 @@ button {
     cursor: pointer;
 }
 
-.logo {
-    display: flex;
-    padding: 0px;
-    font-family: 'Raleway';
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
-}
-
-.logo-first-part {
-    color: var(--iris);
-}
-
-.nav-menu {
-    font-weight: 500;
-}
-
 .nav-studio:hover, .nav-studio:focus,
 .nav-portfolio:hover, .nav-portfolio:focus,
 .nav-contacts:hover, .nav-contacts:focus {
@@ -74,25 +150,28 @@ button {
     color: var(--iris);
 }
 
-.contacts {
-    color: var(--slate);
-}
-
 .email:hover, .email:focus,
 .number:hover, .number:focus {
     color: var(--iris);
 }
 
 .solutions {
+    margin: 0;
+
     font-size: 56px;    
     font-weight: 500;    
-    line-height: 1.07em;
+    line-height: 1.07;
     text-align: center;
     color: var(--white);    
 }
 
 .solutions-button {
-    line-height: 1.17em;
+    display: block;
+    padding: 16px 32px;
+    width: fit-content;
+    
+
+    line-height: 1.17;
     color: var(--white);
     background: var(--iris);
     border: 0px;
@@ -109,21 +188,80 @@ button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.lower-header {
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section:first-child {
+    display: flex;
+    padding-top: 192px;
+    padding-bottom: 192px;
+    gap: 48px;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
     background-color: var(--navy-blue);
 }
 
-.team-members {
+.section:nth-child(3) {
+    padding-top: 0;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
+
+.feature {
+    flex-basis: calc((100%-24px*3)/4);
+}
+
+.section:nth-child(4) {
     background-color: var(--cloud);
 }
 
-.card {
-    text-align: center;
-    background-color: var(--white);
+.team-cards {
+    display: flex;
+    gap: 24px;
 }
 
-footer {
+.card {
+    flex-basis: calc((100%-24px*3)/4);
+    text-align: center;
+    background-color: var(--white);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 32px 16px;
+}
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--navy-blue);
+}
+
+.footer-content {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+}
+
+.footer-logo {
+    padding: 0;
 }
 
 .footer-text {
@@ -148,6 +286,12 @@ footer {
     background: var(--iris);
     border: 1px solid var(--iris);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.card-content-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 li.project-card {
