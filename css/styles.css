@@ -138,13 +138,11 @@ button {
     cursor: pointer;
 }
 
-.nav-studio:hover, .nav-studio:focus,
-.nav-portfolio:hover, .nav-portfolio:focus,
-.nav-contacts:hover, .nav-contacts:focus {
+.nav-list-item:hover, .nav-list-item:focus {
     color: var(--slate);
 }
 
-.nav-studio:active, .nav-portfolio:active, .nav-contacts:active {
+.nav-list-item:active {
     color: var(--iris);
 }
 
